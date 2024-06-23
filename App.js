@@ -45,14 +45,14 @@ export default function App() {
   }
   return (
     <>
-    // <Router>
+    {/* // <Router> */}
     <div className="logo">
       
     <Navbar title="Textutils ka" abot="About us" mode={mode} togglemode={togglemode}/></div>
     <Alert alert={alert}/>
     
     <div className="container" my-5>
-    // <Routes>
+    {/* // <Routes> */}
        <Form mode={mode} showAlert={showAlert} />
     
     
@@ -63,4 +63,4 @@ export default function App() {
   </>);
 }
 
-// export default App;
+ 
