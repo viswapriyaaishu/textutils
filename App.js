@@ -3,13 +3,13 @@ import './App.css';
 import Navbar from "./mycomponents/Navbar.js"
 import React,{useState} from 'react'
 import Alert from './mycomponents/Alert.js'
-import About from './mycomponents/About.js'
+// import About from './mycomponents/About.js'
 
-import{
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from "react-router-dom";
+// import{
+//   BrowserRouter as Router,
+//   Route,
+//   Routes
+// } from "react-router-dom";
 export default function App() {
 
   const[mode,setMode]=useState('dark')
@@ -45,20 +45,20 @@ export default function App() {
   }
   return (
     <>
-    <Router>
+    // <Router>
     <div className="logo">
       
     <Navbar title="Textutils ka" abot="About us" mode={mode} togglemode={togglemode}/></div>
     <Alert alert={alert}/>
     
     <div className="container" my-5>
-    <Routes>
-        <Route path="/home" element={<Form mode={mode} showAlert={showAlert} />}></Route>
-    <Route path='/about' element={<About/>}> </Route>
+    // <Routes>
+       <Form mode={mode} showAlert={showAlert} />
     
-    </Routes>
+    
+   
     </div>
-    </Router>
+   
     
   </>);
 }
